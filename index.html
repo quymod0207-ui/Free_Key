@@ -1,114 +1,175 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Sanji Key Free - Nhận Key Kích Hoạt Miễn Phí</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanji Ping VIP</title>
 
-        body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #0A0F1E 0%, #0F1629 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
 
-        /* Container chính */
-        .container {
-            max-width: 500px;
-            width: 100%;
-            margin: 0 auto;
-        }
+    body {
+        height: 100vh;
+        background: radial-gradient(circle at top, #001f3f, #000814);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: #fff;
+    }
 
-        /* Card chính - glassmorphism bo góc */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            border-radius: 32px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            padding: 32px 24px;
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 215, 0, 0.1);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
+    /* CARD */
+    .card {
+        width: 380px;
+        padding: 25px;
+        border-radius: 25px;
+        background: rgba(0, 30, 60, 0.6);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 150, 255, 0.3);
+        box-shadow: 0 0 30px rgba(0, 150, 255, 0.2);
+        text-align: center;
+        position: relative;
+    }
 
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 28px;
-        }
-        .logo-icon {
-            font-size: 64px;
-            margin-bottom: 12px;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-        }
-        h1 {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 28px;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-        }
-        .badge {
-            display: inline-block;
-            background: rgba(255, 215, 0, 0.2);
-            border: 1px solid rgba(255, 215, 0, 0.5);
-            border-radius: 40px;
-            padding: 4px 16px;
-            font-size: 11px;
-            color: #FFD700;
-            margin-top: 8px;
-        }
+    /* TITLE */
+    .title {
+        font-size: 28px;
+        letter-spacing: 6px;
+        color: #4fc3ff;
+        text-shadow: 0 0 10px #00bfff;
+        margin-bottom: 10px;
+    }
 
-        /* Thông tin key */
-        .key-info {
-            background: rgba(0, 149, 255, 0.15);
-            border-radius: 24px;
-            padding: 20px;
-            margin: 24px 0;
-            border-left: 3px solid #0095FF;
+    .badge {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 20px;
+        background: rgba(0, 120, 255, 0.2);
+        border: 1px solid rgba(0, 180, 255, 0.5);
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* KEY BOX */
+    .key-box {
+        border-radius: 20px;
+        padding: 20px;
+        border: 1px solid rgba(0, 150, 255, 0.5);
+        background: rgba(0, 60, 120, 0.3);
+        box-shadow: inset 0 0 20px rgba(0,150,255,0.2);
+        margin-bottom: 20px;
+    }
+
+    .key {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #8fd3ff;
+        margin: 10px 0;
+    }
+
+    .info {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-top: 5px;
+    }
+
+    /* BUTTONS */
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border-radius: 30px;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn-copy {
+        background: rgba(0, 100, 200, 0.3);
+        border: 1px solid rgba(0, 150, 255, 0.6);
+        color: #cfefff;
+    }
+
+    .btn-active {
+        background: linear-gradient(90deg, #00aaff, #0077ff);
+        color: white;
+        box-shadow: 0 0 15px #00aaff;
+    }
+
+    .back {
+        font-size: 12px;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+
+    /* HEART ANIMATION */
+    .heart {
+        position: absolute;
+        color: #00bfff;
+        font-size: 18px;
+        animation: float 6s linear infinite;
+        opacity: 0.7;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(100vh);
+            opacity: 0;
         }
-        .key-label {
-            font-size: 13px;
-            color: #88AAFF;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-            font-weight: 500;
+        50% {
+            opacity: 1;
         }
-        .key-value {
-            font-family: 'Courier New', monospace;
-            font-size: 22px;
-            font-weight: bold;
-            color: #00FFAA;
-            word-break: break-all;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 14px;
-            border-radius: 16px;
-            text-align: center;
-            letter-spacing: 1.5px;
+        100% {
+            transform: translateY(-10vh);
+            opacity: 0;
         }
-        .copy-btn {
-            background: rgba(0, 149, 255, 0.3);
-            border: none;
-            color: #0095FF;
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-size: 13px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="title">SANJI PING</div>
+    <div class="badge">NHẬN KEY VIP 24H</div>
+
+    <div class="key-box">
+        <div style="font-size:30px;">🔑</div>
+        <div class="key">VIP-89C7-1C9G-FYKO-D2YT</div>
+        <div class="info">⏰ Hạn dùng: 17:48:30 14/4/2026</div>
+        <div class="info">📱 Giới hạn 1 thiết bị</div>
+    </div>
+
+    <button class="btn btn-copy">📋 SAO CHÉP KEY VIP</button>
+    <button class="btn btn-active">✅ KÍCH HOẠT NGAY</button>
+
+    <div class="back">← Về trang chủ Sanji</div>
+</div>
+
+<!-- HEARTS -->
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💙";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>            font-size: 13px;
             cursor: pointer;
             margin-top: 14px;
             transition: all 0.2s;
